@@ -2,6 +2,10 @@ package cumSum;
 import java.util.Scanner;
 public class CumSum {
 	public static Scanner stdin = new Scanner(System.in);
+	public static void main(String[] args) {
+		int total = cumSum();
+		System.out.println("Sum of numbers: "+total);
+	}
 	public static int cumSum() { // returns cumulative sum of integers
 		int sum = 1; // -1 will always be added, so init sum to 1
 		int num = -1; // so that num is within scope for while clause
